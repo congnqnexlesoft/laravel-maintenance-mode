@@ -8,11 +8,11 @@ composer require congnqnexlesoft/laravel-maintenance-mode
 ```
 
 ## How to configure
-In `bootstrap/app.php`, add this instruction in providers
-
+In `app/Http/Kernel.php`, add this `middleware` in `$middleware array` (should be **1st item**)
 ```PHP
-$app->register(CongnqNexlesoft\MaintenanceMode\Providers\MaintenanceModeServiceProvider::class);
+\CongnqNexlesoft\MaintenanceMode\Http\Middleware\MaintenanceModeMiddleware::class,
 ```
+
 ## Response
 ### Using JSON
 - Require config the line below to your `.env` file
