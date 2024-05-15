@@ -1,0 +1,42 @@
+{
+  "name": "congnqnexlesoft/laravel-maintenance-mode",
+  "type": "library",
+  "description": "A custom maintenance mode for Laravel (JSON response support).",
+  "keywords": [
+    "laravel",
+    "maintenance",
+    "mode",
+    "JSON-response-support"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cong Nguyen Quang",
+      "email": "congnqnexlesoft@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "laravel/framework": "^5.8"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "CongnqNexlesoft\\MaintenanceMode\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CongnqNexlesoft\\MaintenanceMode\\": "src"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "kylekatarnls/update-helper": false
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

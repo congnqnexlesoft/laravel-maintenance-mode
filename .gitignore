@@ -1,0 +1,8 @@
+/tests/stubs/storage/framework/down
+/vendor
+.php_cs.cache
+.env.*.php
+.env.php
+.env
+.idea
+composer.lock
