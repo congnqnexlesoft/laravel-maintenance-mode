@@ -12,6 +12,7 @@ In `app/Http/Kernel.php`, add this `middleware` in `$middleware array`
 - [Required] put `MaintenanceModeMiddleware::class` below `\Spatie\Cors\Cors::class`  (should be **2nd item**)
 - [Required] put `MaintenanceModeMiddleware::class` above `\App\Http\Middleware\CheckForMaintenanceMode::class` 
 ```PHP
+// 2nd, should below `Cors` and above 'CheckForMaintenanceMode'
 \CongnqNexlesoft\MaintenanceMode\Http\Middleware\MaintenanceModeMiddleware::class,
 ```
 
