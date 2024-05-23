@@ -24,7 +24,7 @@ In `app/Http/Kernel.php`, add this `middleware` in `$middleware array`
 ```dotenv
 ## [BEGIN] congnqnexlesoft/laravel-maintenance-mode, lumen-maintenance-mode, symfony-maintenance-mode ##
 MAINTENANCE_RESPONSE_FORMAT=json
-#    except URIs list, separate by ,(comma) .e.g /api/get-ip,/api/objects/1234
+#    separate by ,(comma)
 EXCEPT_URIS=URI_1,URI_2
 ## [END] congnqnexlesoft/laravel-maintenance-mode, lumen-maintenance-mode, symfony-maintenance-mode ##
 ```
