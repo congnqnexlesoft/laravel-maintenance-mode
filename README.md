@@ -9,7 +9,7 @@ composer require congnqnexlesoft/laravel-maintenance-mode
 
 ## How to configure
 In `app/Http/Kernel.php`, add this `middleware` in `$middleware array` 
-- [Required] put `MaintenanceModeMiddleware::class` below `\Spatie\Cors\Cors::class`  (should be **2nd item**)
+- [Required] Put `MaintenanceModeMiddleware::class` below `\Spatie\Cors\Cors::class`  (should be **2nd item**)
 - [Required] Don't use `Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode`
 ```PHP
 // 2nd, should below `Cors` and don't use 'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode'
