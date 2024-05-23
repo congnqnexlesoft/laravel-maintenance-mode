@@ -18,8 +18,8 @@ In `app/Http/Kernel.php`, add this `middleware` in `$middleware array`
 
 ## Response
 ### Features:
-- *Using JSON response*
-- *Except URIs*
+- **Using JSON response**
+- **Except URIs**
 - Require config the line below to your `.env` file
 ```dotenv
 ## [BEGIN] congnqnexlesoft/laravel-maintenance-mode, lumen-maintenance-mode, symfony-maintenance-mode ##
