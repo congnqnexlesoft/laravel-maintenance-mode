@@ -10,18 +10,23 @@ composer require congnqnexlesoft/laravel-maintenance-mode
 ## How to configure
 In `app/Http/Kernel.php`, add this `middleware` in `$middleware array` 
 - [Required] put `MaintenanceModeMiddleware::class` below `\Spatie\Cors\Cors::class`  (should be **2nd item**)
-- [Required] put `MaintenanceModeMiddleware::class` above `\App\Http\Middleware\CheckForMaintenanceMode::class` 
+- [Required] Don't use `Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode`
 ```PHP
-// 2nd, should below `Cors` and above 'CheckForMaintenanceMode'
+// 2nd, should below `Cors` and don't use 'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode'
 \CongnqNexlesoft\MaintenanceMode\Http\Middleware\MaintenanceModeMiddleware::class,
 ```
 
 ## Response
-### Using JSON
+### Features:
+- *Using JSON response*
+- *Except URIs
 - Require config the line below to your `.env` file
 ```dotenv
-## congnqnexlesoft/laravel-maintenance-mode ##
+## [BEGIN] congnqnexlesoft/laravel-maintenance-mode, lumen-maintenance-mode, symfony-maintenance-mode ##
 MAINTENANCE_RESPONSE_FORMAT=json
+#    except URIs list, separate by ,(comma) .e.g /api/get-ip,/api/objects/1234
+EXCEPT_URIS=URI_1,URI_2
+## [END] congnqnexlesoft/laravel-maintenance-mode, lumen-maintenance-mode, symfony-maintenance-mode ##
 ```
 ### Using View
 - Copy these files to your project (if):
